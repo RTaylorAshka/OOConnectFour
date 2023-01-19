@@ -63,8 +63,7 @@ class Game{
     // make column tops (clickable area for adding a piece to that column)
     const top = document.createElement('tr');
     top.setAttribute('id', 'column-top');
-    this.gameClick = this.handleClick.bind(this);
-    top.addEventListener('click', this.gameClick);
+    top.addEventListener('click', (e)=>{this.handleClick(e)});
   
     for (let x = 0; x < this.WIDTH; x++) {
       const headCell = document.createElement('td');
