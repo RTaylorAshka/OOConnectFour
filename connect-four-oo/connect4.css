@@ -1,0 +1,95 @@
+/* game board table */
+body {
+  background-color: rgb(22, 22, 22);
+}
+
+#game{
+  display: flex;
+  margin-top: 5%;
+}
+
+#board{
+  padding-left: 100px;
+}
+
+#board td {
+  width: 100px;
+  height: 100px;
+  border: solid 1px #666;
+  
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.piece.p1 {
+  background-color: #ff0000;
+}
+
+.piece.p2 {
+  background-color: #0000ff;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
+
+#playerForm{
+  float:left;
+  
+ 
+  
+
+  
+}
+
+
+input{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+
+  background-color: lightgray;
+  
+}
+
+
+button{
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  background-color: lightgray;
+
+  font-size: 200%;
+  font-weight: lighter;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 0px;
+}
+
+button:hover{
+  scale: 105%;
+}
+
+span.p1 {
+  font-size: 5rem;
+  color: lightgray;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+span.p2 {
+  font-size: 5rem;
+  color: lightgray;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
